@@ -25,7 +25,7 @@ function drawGrid(size) {
 
             if (currColor == "rgb(255, 255, 255)") newColor = "rgba(0, 147, 145, 0.1)";
             else {
-                if (alpha > 0.9) {
+                if ((alpha > 0.9) || (isNaN(alpha))) {
                     alpha = 1;
                 }
                 else {
